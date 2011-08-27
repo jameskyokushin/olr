@@ -3,7 +3,7 @@
 }
 
 body {
-  background: 	#7E2217;
+  background: #7E2217;
 }
 
 header {
@@ -68,4 +68,20 @@ nav ul li a:visited {
 }
 nav ul li a:hover {
   text-decoration: underline;
+}
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
 }
