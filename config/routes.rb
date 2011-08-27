@@ -1,6 +1,8 @@
 Devise1::Application.routes.draw do
     
-  get "pages/home"
+  resources :members
+
+  match '/home', :to => "pages#home"
 
   devise_for :users
 

@@ -1,0 +1,49 @@
+
+
+<table>
+  <tr>
+    <th>Iko number</th>
+    <th>Full name</th>
+    <th>Gender</th>
+    <th>Dojo</th>
+    <th>Rank</th>
+    <th>Date of birth</th>
+    <th>Date started</th>
+    <th>Weight</th>
+    <th>Height</th>
+    <th>Email</th>
+    <th>Contact</th>
+    <th>Parent name</th>
+    <th>Address</th>
+    <th>Parent contact</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @members.each do |member| %>
+  <tr>
+    <td><%= member.iko_number %></td>
+    <td><%= member.full_name %></td>
+    <td><%= member.gender %></td>
+    <td><%= member.dojo %></td>
+    <td><%= member.rank %></td>
+    <td><%= member.date_of_birth %></td>
+    <td><%= member.date_started %></td>
+    <td><%= member.weight %></td>
+    <td><%= member.height %></td>
+    <td><%= member.email %></td>
+    <td><%= member.contact %></td>
+    <td><%= member.parent_name %></td>
+    <td><%= member.address %></td>
+    <td><%= member.parent_contact %></td>
+    <td><%= link_to 'Show', member %></td>
+    <td><%= link_to 'Edit', edit_member_path(member) %></td>
+    <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Member', new_member_path %>

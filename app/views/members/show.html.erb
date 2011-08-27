@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Iko number:</b>
+  <%= @member.iko_number %>
+</p>
+
+<p>
+  <b>Full name:</b>
+  <%= @member.full_name %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @member.gender %>
+</p>
+
+<p>
+  <b>Dojo:</b>
+  <%= @member.dojo %>
+</p>
+
+<p>
+  <b>Rank:</b>
+  <%= @member.rank %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @member.date_of_birth %>
+</p>
+
+<p>
+  <b>Date started:</b>
+  <%= @member.date_started %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @member.weight %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @member.height %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @member.email %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @member.contact %>
+</p>
+
+<p>
+  <b>Parent name:</b>
+  <%= @member.parent_name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @member.address %>
+</p>
+
+<p>
+  <b>Parent contact:</b>
+  <%= @member.parent_contact %>
+</p>
+
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>

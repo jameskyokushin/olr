@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110826023713) do
+ActiveRecord::Schema.define(:version => 20110827071812) do
+
+  create_table "members", :force => true do |t|
+    t.string   "iko_number"
+    t.string   "full_name"
+    t.string   "gender"
+    t.string   "dojo"
+    t.string   "rank"
+    t.date     "date_of_birth"
+    t.string   "date_started"
+    t.string   "weight"
+    t.string   "height"
+    t.string   "email"
+    t.string   "contact"
+    t.string   "parent_name"
+    t.string   "address"
+    t.string   "parent_contact"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
