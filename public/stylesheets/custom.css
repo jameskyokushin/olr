@@ -44,11 +44,12 @@ a {
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   display: block;
   text-align: center;
   width: 190px;
   color: #fff;
-  background: #006400;
+  background: #7E2217;
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
